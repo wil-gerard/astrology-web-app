@@ -23,45 +23,32 @@
 
 html {
   font-size: 62.5%;
+  text-align: center;
 }
 
 
 /******************************************
 /* LAYOUT
 /*******************************************/
-/*
-.row,
-.main, {
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-}
 
-.main {
-  height: 85vh;
-}
-
-.footer {
-  height: 5vh;
-}
-
-.header {
-  height: 10vh;
-} */
-
+body,
 .row,
 .main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  align-content: center;
 }
 
-/* .main {
-  flex-grow: 2;
+header {
+  height: 5vh;
+  margin: 5% 5%;
+  flex: 1 0 auto;
 }
 
-.row {
-  flex-grow: 1;
-} */
+
+
 /******************************************
 /* TYPOGRAPHY
 /*******************************************/
@@ -72,6 +59,14 @@ h1 {
 
 h2 {
   font: 200 2rem 'Nunito Sans', sans-serif;
+}
+
+h3 {
+  font: 5rem 'Nunito Sans', sans-serif;
+}
+
+p {
+  font: 3rem 'Nunito Sans', sans-serif;
 }
 
 .main {
@@ -94,12 +89,20 @@ input:valid+span::after {
   content: '✓';
 }
 
-/* .button {
-  margin-left: 1vw;
-} */
-
-
-
 /******************************************
-/* OUTPUT
+/* MAIN
 /*******************************************/
+
+body {
+  background-image: url("../assets/astrology.jpg");
+  height: 100vh;
+  width: 100%;
+}
+
+.main {
+  margin: 5% 5%;
+  padding: 5% 5%;
+  border: 5px solid black;
+  backdrop-filter: blur(10px);
+  flex: 4 0 auto;
+}
