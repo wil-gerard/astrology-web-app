@@ -41,52 +41,59 @@ body,
   align-content: center;
 }
 
-header {
-  height: 5vh;
-  margin: 5% 5%;
-  flex: 1 0 auto;
-}
-
-
-
 /******************************************
 /* TYPOGRAPHY
 /*******************************************/
 
+/* HEADER */
+
 h1 {
-  font: 8rem 'Halant', serif;
+  font: 400 4.5rem 'Nunito Sans', sans-serif;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.inputForm,
+button {
+  font: 400 1.8rem 'Nunito Sans', sans-serif; 
+}
+
+/* CONTENT */
+h3,
+p {
+  color: white;
 }
 
 h2 {
-  font: 200 2rem 'Nunito Sans', sans-serif;
-}
-
-h3 {
-  font: 5rem 'Nunito Sans', sans-serif;
+  font: italic 400 5rem 'Nunito Sans', sans-serif;
+  margin-bottom: 2rem;
 }
 
 p {
-  font: 3rem 'Nunito Sans', sans-serif;
+  font: 400 2rem 'Nunito Sans', sans-serif;
 }
 
-.main {
-  font: 200 2rem 'Nunito Sans', sans-serif;
+/******************************************
+/* HEADER
+/*******************************************/
+
+header {
+  height: 20vh;
+  width: 40vw;
+  margin: 5% 5%;
+  padding: 2% 2%;
+  flex: 1 1;
+  border: 1px solid black;
+  border-radius: 100px;
+  backdrop-filter: blur(30px) invert(100%);
 }
 
 /******************************************
 /* INPUT
 /*******************************************/
 
-span::after {
-  padding-left: 5px;
-}
-
-input:invalid + span::after {
-  content: '✖';
-}
-
-input:valid+span::after {
-  content: '✓';
+.inputForm {
+  width: 200px;
 }
 
 /******************************************
@@ -95,14 +102,17 @@ input:valid+span::after {
 
 body {
   background-image: url("../assets/astrology.jpg");
+  /* background-image: url("https://i.imgur.com/dyW49tc.gif"); */
   height: 100vh;
   width: 100%;
 }
 
 .main {
-  margin: 5% 5%;
+  margin: 0 20% 5% 20%;
   padding: 5% 5%;
-  border: 5px solid black;
-  backdrop-filter: blur(10px);
-  flex: 4 0 auto;
+  border: 1px solid black;
+  border-radius: 100px;
+  backdrop-filter: blur(30px) invert(100%);
+  flex: 2 1 auto;
+  visibility: hidden;
 }

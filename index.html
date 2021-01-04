@@ -2,8 +2,8 @@
 <html lang="en">
 	<head>
   	<meta charset="utf-8">
-  	<meta name="description" content="Your description goes here">
-  	<meta name="keywords" content="one, two, three">
+  		<meta name="description" content="Your description goes here">
+  		<meta name="keywords" content="one, two, three">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
 		<title>2021 Horoscope</title>
@@ -11,28 +11,24 @@
 		<!-- external CSS link -->
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="preconnect" href="https://fonts.gstatic.com">
-		<link href="https://fonts.googleapis.com/css2?family=Halant:wght@600&family=Nunito+Sans:wght@200;400&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,400;0,600;0,700;1,200;1,300&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
 
 <!-- HEADER -->
 		<header class="row">
-			<h1>What will 2021 bring for you?</h1>
-			<h2>Find your horoscope below</h2>
-			<form class="" action="index.html" method="post">
-				<label for="">
-					<input required="" type="date" placeholder="yyyy-mm-dd" pattern="\d\d\d\d-\d\d-\d\d" name="date" value="" class="" min="2021-01-01" max="2021-12-31">
-					<span class="validity"></span>
-				</label>
-				<span class="button"><button>Submit</button></span>
+			<h1>2021 Horoscope Generator</h1>
+			<form onsubmit="return false">
+				<input id="inputData" class="inputForm" required="" type="date" placeholder="yyyy-mm-dd" pattern="\d\d\d\d-\d\d-\d\d" name="date" value="" min="2021-01-01" max="2021-12-31">
+				<button id="submitButton">Submit</button>
 			</form>
 		</header>
 
 <!-- CONTENT -->
-		<section class="main">
-			<h3>Look into my crystal ball.</h3>
-			<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique porro iste ducimus totam neque? Cupiditate quidem perspiciatis cum error alias eius aspernatur saepe voluptates, eos, nihil, nam iure ipsam quo?</p>
+		<section id="mainContent" class="main">
+			<h2 id="displayZodiac">Find your horoscope...</h3>
+			<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique porro iste ducimus totam neque? Cupiditate quidem perspiciatis cum error alias eius aspernatur saepe voluptates, eos, nihil, nam iure ipsam quo? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique porro iste ducimus totam neque? Cupiditate quidem perspiciatis cum error alias eius aspernatur saepe voluptates, eos, nihil, nam iure ipsam quo?</p>
 		</section>
 
 
