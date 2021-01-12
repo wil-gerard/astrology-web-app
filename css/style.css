@@ -1,9 +1,11 @@
-/* Box Model Hack */
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
 * {
   box-sizing: border-box;
 }
 
-/* Clear fix hack */
 .clearfix:after {
      content: ".";
      display: block;
@@ -17,15 +19,10 @@
 	clear: both;
 }
 
-/******************************************
-/* BASE STYLES
-/*******************************************/
-
 html {
   font-size: 62.5%;
   text-align: center;
 }
-
 
 /******************************************
 /* LAYOUT
@@ -39,6 +36,23 @@ body,
   align-items: center;
   justify-content: center;
   align-content: center;
+}
+
+header {
+  position: sticky;
+  top: 0px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0px
+}
+
+body {
+  background-image: url("../assets/astrology.jpg");
+  /* background-image: url("https://i.imgur.com/dyW49tc.gif"); */
+  height: 100vh;
+  width: 100%;
 }
 
 /******************************************
@@ -59,6 +73,7 @@ button {
 }
 
 /* CONTENT */
+
 h2,
 p {
   color: white;
@@ -79,17 +94,13 @@ p {
 
 header {
   height: 20vh;
-  width: 40vw;
-  margin: 5% 5%;
-  padding: 2% 2%;
+  min-width: 40vw;
+  margin: 5%;
+  padding: 2%;
   flex: 1 1;
   border-radius: 100px;
   backdrop-filter: blur(30px) invert(100%);
 }
-
-/******************************************
-/* INPUT
-/*******************************************/
 
 .inputForm {
   width: 200px;
@@ -99,16 +110,10 @@ header {
 /* MAIN
 /*******************************************/
 
-body {
-  background-image: url("../assets/astrology.jpg");
-  /* background-image: url("https://i.imgur.com/dyW49tc.gif"); */
-  height: 100vh;
-  width: 100%;
-}
-
 .main {
+  text-align: left;
   margin: 0 20% 5% 20%;
-  padding: 5% 5%;
+  padding: 5%;
   border-radius: 100px;
   backdrop-filter: blur(30px) invert(100%);
   flex: 2 1 auto;
